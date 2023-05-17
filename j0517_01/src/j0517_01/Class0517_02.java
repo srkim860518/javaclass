@@ -35,18 +35,23 @@ public class Class0517_02 {
 //	
 	int sub =  c.sub(num[0],num[1]);
 	System.out.println("두수를 빼기 : "+sub);
+	
+	int multi = c.multi(num[0],num[1]);
+	System.out.println("두수를 곱하기: "+multi);
+	
+	double div = c.div(num[0],num[1]);
+//	System.out.println("두수를 나누기: "+div);
+	System.out.printf("두수를 나누기: %.2f",div);
+	
 	}//main
-	
-	
+//================================================================
 	//더하기 메소드
 	int add(int a,int b) { //add가 main 내에 있으니 메소드 변수
 //		int add(num1,num2)  //int a, num1 로 사용해도 됨
 		
 		int result = a+b; // 15 = 10+5
 		return result;
-		
-		
-		
+	
 	}// int add 
 	// 서브메소드
 	int sub(int a,int b) {
@@ -54,10 +59,46 @@ public class Class0517_02 {
 	return sub;
 	}//
 		
+	// 멀티 메소드
+	int multi(int a, int b) {
+		int multi = a*b;
+		return multi;
+	}
+	
+	// div 메소드
+	double div(int a, int b) {
+		double div = a/(double) b; // 주의!! 형변환 둘 중 하나만 선언 필수!!!
+		return div;
+	}
 		
-		
+		// 리턴 값이(반환값) 없을때는 void 적어주세요!!!!!!, 반환값은 int, double 등 동일하게!!!!!
 		
 		
 	
 
 }//class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
