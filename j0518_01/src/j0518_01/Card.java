@@ -1,4 +1,4 @@
-package j0517_01;
+package j0518_01;
 
 public class Card {
 	

@@ -47,11 +47,11 @@ public class Class0516_02 {
 					System.out.println((count+1)+"번째 학생의 이름을 입력하세요.(0.이전 페이지 이동)");
 			// 국어 :score[i][0], 영어 : score[i][1], 수학: score[i][2]	
 					name[i] = scan.next();
+				}
 					
 					
 					
 		
-					}
 			// 국영수 점수 입력
 			for(int j=0;j<3;j++) {
 			System.out.println((title[j+1])+"점수를 입력하세요");
@@ -73,29 +73,16 @@ public class Class0516_02 {
 			
 				}//for
 			break;
-			
-			
-			
-			
+
 			case 0:
-			 System.out.println("[프로그램 종료]");
+			    System.out.println("[프로그램 종료]");
 				System.out.println();
 				break loop;// switch 종료
-				
-				
-				
-				
+
 				
 			} // switch
 					
-	
-	
-	
-	
 		} //while
-	
-	
-	
 	
 	} // main
 

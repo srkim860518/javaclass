@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class StuMain {
@@ -7,7 +5,7 @@ public class StuMain {
 	static Scanner scan = new Scanner(System.in);
 	public static void main(String[] args) {
 
-		
+		// 필수로 외워야하는 코드- 교수님 
 		 //1. 성적입력
 			// 2. 성적출력
 			// 3. 성적수정
@@ -18,6 +16,10 @@ public class StuMain {
 			// 이름,국어,영어,수학, 합계,평균 - 10명
 			// a.변수선언
 
+		
+		
+		
+		
 	    	Student[] s = new Student[10];
 			int choice = 0; //선택번호
 			int count = 0;  //성적입력 학생수
@@ -35,7 +37,8 @@ public class StuMain {
 			case 1:// 성적입력 
 				
 				//성적 입력 메소드 호출= 클래스명, 메소드명()/ 메소드명()
-				 count = stuInput(count,s); //입력된 학생수				 
+				 count = stuInput(count,s); //입력된 학생수			
+				 // 중괄호가 있으면 : 메소드 선언, 중괄호가 없으면 메소드 호출
 				 break;
 				 
 			case 2: //성적입력

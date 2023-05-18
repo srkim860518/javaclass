@@ -19,7 +19,6 @@ public class Class0517_09 {
 		// 배열 정렬
 //		 Arrays.sort(arr);제일 간단함.
 		calculate(arr);
-		
 		for(int i=0;i<3;i++) {
 			System.out.println(arr[i]+" ");
 		}
@@ -67,14 +66,15 @@ public class Class0517_09 {
 	} // main
 	
 	
-	static void calulate(int[] arr) {
-	int max = Math.max(Math.max(arr[0], arr[1], arr[2]);
-	//int min = Math.min(Math.min(arr[0], arr[1], arr[2]);
-	int middle = (arr[0]+arr[1]+arr[2])-max-min;
+	static void calculate(int[] arr) {
+		int min = Math.min(Math.min(arr[0], arr[1]),arr[2]);
+		int max = Math.max(Math.max(arr[0], arr[1]),arr[2]);
+		int middle = (arr[0]+arr[1]+arr[2])-max-min;
+		
+		arr[0]=min;
+		arr[1]=middle;
+		arr[2]=max;
 	
-	arr[0]=min;
-	arr[1]=middle;
-	arr[2]=max;
 	}
 }	//class
 
