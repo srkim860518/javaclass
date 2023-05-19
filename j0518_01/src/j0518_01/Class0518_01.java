@@ -12,11 +12,11 @@ public class Class0518_01 {
 		// 숫자를 입력 받아 해당되는 팩토리얼을 구현하시오.
 		
 		int num=1;
-//		for(int i=5;i>0;i--) {
-//		num =num*i; // 5
-//		System.out.println("num : "+num);
-//		}		
-//		System.out.println(num);
+		for(int i=5;i>0;i--) {
+		num =num*i; // 5
+		System.out.println("num : "+num);
+		}		
+		System.out.println(num);
 		
 		// 10
 		

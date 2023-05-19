@@ -15,7 +15,7 @@ public class Class0518_10 {
 		
 	}
 	public static void main(String[] args) {
-		Class0518_11.cv = 50; // class명.변수명  main내 이런 변수는 없다.  일부러 넣어둠 
+	//	Class0518_11.cv = 50; // class명.변수명  main내 이런 변수는 없다.  일부러 넣어둠 
 		System.out.println(cv);
 
 		Class0518_11 c = new Class0518_11();// 객체선언

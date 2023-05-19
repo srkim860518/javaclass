@@ -33,7 +33,7 @@ public class Class0518_06 {
 			System.out.println(num[i]);
 		}
 		
-//		 while //문 공부하자 김선례!!!!!!!!!! 정신차려!!!!!!!
+//		 while //문 
 //		int j =0;
 //		
 //		while(j<10) {
