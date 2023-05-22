@@ -61,16 +61,16 @@ public class Class0516_08 {
 					
 					//학생수 1증가
 					count++;
-				}
+				}//for
 				break;
 			
-			}
+			}//switch
 			
 			
-		}
+		}//while
 		
 		
 
-	}
+	}//main
 
-}
+}//class

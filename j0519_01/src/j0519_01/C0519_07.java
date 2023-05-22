@@ -11,8 +11,8 @@ public class C0519_07 {
 	
 	
 	// 이게 훨씬 편하게 사용할 수 있음 
-	Data2 dd = new Data2();
-	Data2 d2 = new Data2(); // 생성자를 호출 하시오
+	//Data2 dd = new Data2();
+	Data2 d2 = new Data2(10); // 생성자를 호출 하시오
 	
 	
 }
