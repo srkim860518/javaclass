@@ -2,7 +2,7 @@ package jhw_01;
 
 import java.util.Scanner;
 
-public class Hw518_02 {
+public class Hw0518_02 {
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);

@@ -17,13 +17,7 @@ public class HW0519_03 {
 		//6 / 3 = 2.00
 		
 		// class 지정
-		String title = {"더하기","빼기","곱하기","나누기"};
-		int[] num = new int[4]; // 배열 4개
-		for(int i=0;i<4;i++) {
-			System.out.println(title[i]+"를 입력하세요.");
-			num[i]= scan.nextInt();			
-		}//for
-		
+
 		
 		
 		

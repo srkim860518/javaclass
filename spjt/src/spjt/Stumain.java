@@ -14,6 +14,7 @@ public class Stumain {
 		Student[] s = new Student[10]; // 배열선언, 공간 10개
 		//s[0] = new Student(); // 객체선언
 		String name=""; //클래스 변수 객체 선언없이 클래스명.변수명
+		String searchName="";// 학생이름검색
 		int kor=0;;
 		int eng=0;
 		int math=0;
@@ -34,13 +35,30 @@ public class Stumain {
 				System.out.println("[프로그램을 종료합니다.]");
 				System.out.println();
 				break;
-			}//ㅑㄹ
+			}//
 			
 			switch(choice) {
 			case 1:// 성적 입력
 				count = stuInput(count,s);
+				break;
+			case 2: //성적출력
+				stuOutput(count,s);
+				break;
+			case 3: //성적수정
+				System.out.println("수정할 학생 이름을 입력하세요.");
+				searchName = scan.next();
+				for(int i=0;i<count;i++) {
+					if(s[i].getName().equals(searchName));//  object의 equals  
+					System.out.println("[학생이 검색되었습니다.]");
+					System.out.println("수정할 과목을 선택하세요.");
+					System.out.println("1. 국어");
+					System.out.println("2. 영어");
+					System.out.println("3. 수학");
+					System.out.println("=============");
+					System.out.println("번호를 입력하세요");
+					choice = scan.nextInt();
+				}
 				
-			break;
 				
 			}//switch
 			
@@ -50,6 +68,25 @@ public class Stumain {
 		}//while
 	}//main
 
+	//다른 메소드 선언 - case 2: 학생성적 출력
+	static void stuOutput(int count,Student[] s) {
+		System.out.printf("%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s \n",
+				Student.title[0],Student.title[1],Student.title[2],Student.title[3],
+				Student.title[4],Student.title[5],Student.title[6],Student.title[7]);
+		System.out.println("------------------------------------------------------");
+		for(int i=0;i<count;i++) { //학생수
+			//학번,이름,국어,영어,수학,합계,평균,등수
+			System.out.printf("%s\t%s\t%d\t%d\t%d\t%d\t%.2f\t%d \n",
+					s[i].getStuNo(),s[i].getName(),s[i].getKor(),s[i].getEng(),
+							s[i].getMath(),s[i].getTotal(),s[i].getAvg(),s[i].getRank());
+		}
+		System.out.println();
+		
+		
+	}//stuOutput
+	
+	
+	
 
 
 // 다른 메소드 선언-리턴타입, 메소드명(매개변수{ }
@@ -78,16 +115,16 @@ static int stuInput(int count,Student[] s){ //
 		math = scan.nextInt();
 		s[i] = new Student(name,kor,eng,math);
 		count++;//// 중간에 나오기위해 count++
-	}
+	}//for
 	System.out.println();
 
-	
+
 	return count;
-}
+}//stuinput
 
 
 
-}
+}//class
 
 
 
