@@ -20,14 +20,23 @@ public class Student {
 		
 	}
 	
-	public Student() {}
+	public Student(){} // 기본 생성자 - 클래스명과 일치, void 없음.
+	
+	public Student(String name, int kor, int eng, int math){// 생성자
+			this.name = name;
+			this.kor = kor;
+			this.eng = eng;
+			this.math = math;
+			this.total = kor+eng+math;
+			this.avg = this.total/3.0;
+	}
 	
 // 자동생성 경로 : 오른쪽 마우스 -source-get
-	public int getStuNo() {
+	public int getStuNo() { // get: 읽어오기
 		return stuNo;
 	}
 
-	public void setStuNo(int stuNo) {
+	public void setStuNo(int stuNo) {// 저장하기
 		this.stuNo = stuNo;
 	}
 
@@ -87,12 +96,6 @@ public class Student {
 		this.rank = rank;
 	}
 
-		
-	
-	
-
-
-
 } //main
 
 
@@ -106,12 +109,5 @@ public class Student {
 //double avg;
 //int rank;
 
-//Student(){} // 기본 생성자 - 클래스명과 일치, void 없음.
-//Student(String name, int kor, int eng, int math){// 생성자
-//		this.name = name;
-//		this.kor = kor;
-//		this.eng = eng;
-//		this.math = math;
-//		this.total = kor+eng+math;
-//		this.avg = this.total/3.0;
-//		
+
+	

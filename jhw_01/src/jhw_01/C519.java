@@ -37,7 +37,7 @@ public class C519 {
 		
 		// 4. 이중for문을 사용해서 넣기.
 		for(int i=0;i<abc.length;i++) {
-			
+			System.out.println("");
 			
 		}
 		

@@ -8,11 +8,18 @@ public class StuMain {
 		Scanner scan = new Scanner(System.in);
 
 		Student[] s = new Student[10]; // 객체선언(=객체 배열 선언)
-		String[] title = { "kor", "math", "eng", "total", "avg", "rank" }; // 객체 배열 선언
+//		String[] title = { "kor", "math", "eng", "total", "avg", "rank" }; // 객체 배열 선언
 
 		int count = 0; // 원하는 번호 입력하는 변수
 		int choice = 0; // 입력된 학생 수
-		while (true) {
+		int chk = 0;    //학생이 있는지 확인하는 변수
+		String searchName=""; //검색할 이름변수
+		String name="";
+		int kor=0,eng=0,math=0;
+		
+		//반복문 : while,for
+				//조건이 맞으면 실행 : 무한반복 - 100%
+		loop:while (true) {
 			// 성적 입력
 			System.out.println("[성적처리프로그램]");
 			System.out.println("1.성적입력");
@@ -48,45 +55,37 @@ public class StuMain {
 
 			case 1: // Student class에 입력받은 s[i]= new student 학생선언
 				// 10명 성적을 입력하는 반복문 = (초기식;조건식;증감식)
-				for (int i = 0; i < s.length; i++) {//s.length는 배열선언의 s 변수///나왔다가 다시 들어올 경우 입력된 학생수 다음부터 진행
-
-					s[i] = new Student(); // 객체선언-공간할당을 해줌.
+				for (int i = count; i < s.length; i++) {//s.length는 배열선언의 s 변수///count 나왔다가 다시 들어올 경우 입력된 학생수 다음부터 진행
 
 					
 					System.out.println("이름을 입력하세요.(0.이전페이지 이동");
-					s[i].name = scan.next();//이름입력 또는 이전페이지 이동입력
+					name = scan.next();//이름입력 또는 이전페이지 이동입력
 					//이전 페이지 이동입력이 되었는지 확인-equals,==
-					if(s[i].name.equals("0")) {
+					if(name.equals("0")) {
 						System.out.println("이전 페이지로 이동합니다.");
 					break; // for // break;는 반복문만 빠져 나올 수있다.,for,case, switch
-					}//if
-						
-					
+					}//if	
 					
 				// 참조변수.변수명 
 					System.out.println("국어 점수를 입력하세요");
-					s[i].kor = scan.nextInt();
+					kor = scan.nextInt();
 					System.out.println("영어 점수를 입력하세요");
-					s[i].eng = scan.nextInt();
+					eng = scan.nextInt();
 					System.out.println("수학 점수를 입력해주세요");
-					s[i].math = scan.nextInt();
+					math = scan.nextInt();
 
-					s[i].sum();  // 합계 처리
-					s[i].avg();  // 평균 처리
+					//데이터값과 합계,평균
+					s[i] = new Student(name,kor,eng,math); // 객체선언-공간할당을 해줌.
 					
 					count++; //입력이 완료되면 입력된 학생수 1증가
+
+//					s[i].sum();  // 합계 처리
+//					s[i].avg();  // 평균 처리
 				
 				}//for
 				break; //switch빠져나올때 사용되는 구문
 			case 2:
-
-				break;
-
-			default: // if의 else란 형태임 (
-
-				break;
-				
-System.out.println("[ 학생성적 ]");
+				System.out.println("[ 학생성적 ]");
 				
 				//String[] title = Student.title;
 				//클래스변수사용방법 : 클래스명.변수명
@@ -101,19 +100,15 @@ System.out.println("[ 학생성적 ]");
 					System.out.print(s[i].name+"\t");
 					System.out.print(s[i].kor+"\t");
 					System.out.print(s[i].eng+"\t");
-					System.out.print(s[i].math+"\t");
+					System.out.print(s[i].math+"\t1");
 					System.out.print(s[i].total+"\t");
 					System.out.printf("%.2f \t",s[i].avg);
 					System.out.print(s[i].rank+"\n");
 				}
 				System.out.println();
-				
-				
-				
-				
-				
+//			default: // if의 else란 형태임 (
 				break;
-				
+
 			case 3://
 				System.out.println("[ 학생성적 수정 ]");
 				
@@ -128,8 +123,7 @@ System.out.println("[ 학생성적 ]");
 					break; //switch
 				}
 				
-				
-				
+
 				// 수정할 학생의 이름을 비교하기 위해 반복문
 				for(int i=0;i<count;i++) {
 					chk = 0; //초기화
@@ -149,7 +143,7 @@ System.out.println("[ 학생성적 ]");
 					    	System.out.println("수정할 점수를 입력하세요.>>");
 					    	s[i].kor = scan.nextInt();
 					    	s[i].sum();
-					    	s[i].average();
+					    	s[i].avg();
 					    	System.out.println("[ 국어점수 수정완료 ]");
 					    	System.out.println();
 					    	break;
@@ -159,7 +153,7 @@ System.out.println("[ 학생성적 ]");
 					    	System.out.println("수정할 점수를 입력하세요.>>");
 					    	s[i].eng = scan.nextInt();
 					    	s[i].sum();
-					    	s[i].average();
+					    	s[i].avg();
 					    	System.out.println("[ 영어점수 수정완료 ]");
 					    	System.out.println();
 					    	break;
@@ -169,7 +163,7 @@ System.out.println("[ 학생성적 ]");
 					    	System.out.println("수정할 점수를 입력하세요.>>");
 					    	s[i].math = scan.nextInt();
 					    	s[i].sum();
-					    	s[i].average();
+					    	s[i].avg();
 					    	System.out.println("[ 수학점수 수정완료 ]");
 					    	System.out.println();
 					    	break;
@@ -245,19 +239,7 @@ System.out.println("[ 학생성적 ]");
 	
 }//class
 
-				
-//				break;
-		      }// swithch
-		  } // while
 
-	}// main
-
-}// class
-
-
-      
-	
-	// 나왔다가 다시 들어올 경우 입력된 학생 수 부터 count 자리부터 // 0부터 시작하면 안됨, count부터 시작해야함. 
 
 
 

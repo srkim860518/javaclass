@@ -14,7 +14,7 @@ public class Student {
 		avg = total/3.0;
 	}
 
-	static String[] title = {"이름","국어","영어","수학","합계","평균"};
+	static String[] title = {"이름","국어","영어","수학","합계","평균","등수"};
 	String name;
 	int kor;
 	int eng;
