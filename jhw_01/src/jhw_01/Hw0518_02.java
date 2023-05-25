@@ -11,19 +11,17 @@ public class Hw0518_02 {
 
 		//변수 선언		
 //		int sum = 0;
-//		int num1 = 0;
-//		int num2 = 0;
-//			
+//		//			
 //		//입력
 //		System.out.println("첫번째 숫자를 입력하세요.");
-//		num1 = scan.nextInt();
-//		//int num1 = scan.nextInt();
+//		int num1 = scan.nextInt();
+//		// num1 = scan.nextInt();
 //		System.out.println("두번째 숫자를 입력하세요.");
-//		num2 = scan.nextInt();
-//		//int num2 = scan.nextInt();
+//		int num2 = scan.nextInt();
+//		//num2 = scan.nextInt();
 //		
 //		//합계
-//		for(int i=num1;i<=num2;i++) { // (int i=1초기식 : int i<=10조건식 ;i++) 증감식
+//		for(int i=num1;i<=num2;i++) { 
 //			sum = sum+i;			
 //		}
 //		// 출력
@@ -31,36 +29,41 @@ public class Hw0518_02 {
 
 //===================================================================		
 
-			//1-100까지의 합
-				//1-1000까지의 합
-		//1-100까지의 합
-//		for(int i=1;i<=100;i++) {
-//			sum = sum +i;
-//		}
-//	           //1-1000까지의 합
-//				for(int i=1;i<=1000;i++) {
-//				  sum = sum +i;
-//				}
+			
 				// 문제) 10개의 숫자를 입력받아 합계를 출력하시오.
 				// 1. 변수선언 2. Scan입력 3. 합계 4. 출력
 		
 		// 1. 변수선언
-		int input = 0;
+		
 		int sum = 0;
+		int input = 0;
 
 		// 2. Scan입력
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 3; i++) {
 			System.out.println((i + 1) + "번째 숫자를 입력하세요");
 			input = scan.nextInt();
+			System.out.println(input*1);
+			
 		}
-
+		
 		// 3. 합계
-		for (int i = 1; i <= 10; i++) {// i는 1부터 10,i 증감
-			sum = sum + i; //
+		for (int i = 0; i <10; i++) {// i는 1부터 10,i 증감
+			
+			System.out.println();
 		}
 
 		// 4. 출력
-		System.out.println("합계: " + sum);
+//		System.out.println("합계: " + sum);
+////=============================================================================		
+//	
+//		1-100까지의 합
+//		for(int i=1;i<=100;i++) {
+//			sum = sum +i;
+//		}
+//       //1-1000까지의 합
+//		for(int i=1;i<=1000;i++) {
+//		  sum = sum +i;
+//		}
 
 	}// main
 
