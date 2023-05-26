@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class StuMain {
+	
+	
+	
 	private void main() {
 		ArrayList<Student> list = new ArrayList<>();  //10명의 배열을 대신해서 적용
 		int choice = 0;

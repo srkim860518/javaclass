@@ -26,11 +26,11 @@ public class Class0510_08 {
 //	System.out.println(i+":"+sum);   
 //--------------------------------------------------------------------
 
-//	int sum=0;
-//	int i =1;
-//    for (i=1;i<=3;i++) { // 부등호 뒤 숫자는 반복하는 횟수 =3번 반복
-//    	sum= sum +i;
-//	System.out.println((i-1)+":"+sum);
+	int sum=0;
+	int i =1;
+    for (i=1;i<=3;i++) { // 부등호 뒤 숫자는 반복하는 횟수 =3번 반복
+    	sum= sum +i;
+	System.out.println((i-1)+":"+sum);
 //---------------------------------------------------------------------
 		
 //		숫자를 3번 반복해서 입력 받아, 합을 출력하시오
@@ -42,29 +42,30 @@ public class Class0510_08 {
 //		6. sum 출력
 //       int num = 0;
        
-//       Scanner scan = new Scanner(System.in);
-//     
-//       int sum=0;
-//   	   int i =1;
-//       for ( i=1;i<=3;i++) { // 부등호 뒤 숫자는 반복하는 횟수 =3번 반복
-//    	   System.out.println("숫자를 입력하세요.");
-//    	   num = scan.nextInt();
-//    	   sum= sum + num;
-//    	   //System.out.println((i-1)+sum);
-//    	   System.out.println((i-1)+":"+sum);
-//		
-//       }
+       Scanner scan = new Scanner(System.in);
+     
+       int sum=0;
+   	   int i =1;
+   	   
+       for (int i=1;i<=3;i++) { // 부등호 뒤 숫자는 반복하는 횟수 =3번 반복
+    	   System.out.println("숫자를 입력하세요.");
+    	   int num = scan.nextInt();
+    	   sum= sum + num;
+    	   //System.out.println((i-1)+sum);
+    	   System.out.println((i-1)+":"+sum);
+		
+       }
 //--------------------------------------------------
      //교수님 풀이 - 이문장 외워야함.
-       Scanner scan = new Scanner(System.in);
-       int num =0,sum = 0;
-       
-       for(int i=0;i<3;i++) {
-    	   System.out.println((i+1)+"번째 숫자를 입력하세요.");
-    	   num = scan.nextInt(); 
-    	   sum = sum+num;  			
-   		System.out.println("합계:"+sum);
-       }
+//       Scanner scan = new Scanner(System.in);
+//       int num =0,sum = 0;
+//       
+//       for(int i=0;i<3;i++) {
+//    	   System.out.println((i+1)+"번째 숫자를 입력하세요.");
+//    	   num = scan.nextInt(); 
+//    	   sum = sum+num;  			
+//   		System.out.println("합계:"+sum);
+//       }
 
 		
 

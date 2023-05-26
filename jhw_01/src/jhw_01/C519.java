@@ -26,27 +26,38 @@ public class C519 {
 
 		
 		// 1. 변수선언
-		// 2. 숫자 두개 입력받기
+		// 2. 숫자 두개 입력받기\
 		System.out.println("1번째 번호를 입력하세요");
-		int num = scan.nextInt();
+		int num1 = scan.nextInt();
 		System.out.println("2번째 번호를 입력하세요.");
 		int num2 = scan.nextInt();
 		
 		// 3. int 배열 생성
-		int[][] abc = new int[num][num2];
+		int[][] abc = new int[num1][num2];
 		
 		// 4. 이중for문을 사용해서 넣기.
+		// 입력
 		for(int i=0;i<abc.length;i++) {
-			System.out.println("");
-			
+		    for(int j=0;j<abc[i].length;j++) {
+		    	
+
+		    }
 		}
+		// 출력- 배열의 숫자
+				for(int i=1; i<20;i++) {
+				    for(int j=0; j<i ;j++) {
+				    	
+				    	System.out.println(abc[i][j]);
+				    }
+				}
+		
+	
 		
 		
-		// 5. 이중for문을 사용해서 출력
 		
-		
-		
-		
+//===========================================		
+//		char ch = ' ';
+//		char= scan.next().chars(0);
 		
 	}
 }

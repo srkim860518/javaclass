@@ -27,7 +27,7 @@ public class HW0519_03 {
 		
 		
 		// calculator() 
-		int num[0] = num[];
+	
 		
 
 	}

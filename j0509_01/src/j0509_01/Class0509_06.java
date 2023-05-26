@@ -26,7 +26,7 @@ public class Class0509_06 {
     System.out.println("숫자를 입력하세요.");
     input = scan.nextInt();
     
-    String answer2 = (input>10)?"10보다 큽니다.":"10 보다 작습니다.":"(input==10)?"10 입니다..":"10보다 작습니다.";
+    String answer2 = (input>10)"10보다 큽니다.":"10 보다 작습니다.":"(input==10)?"10 입니다..":"10보다 작습니다.";
      // 에러날 확률이 많이 자주 사용하지 않음
 
 	System.out.println(answer2);
