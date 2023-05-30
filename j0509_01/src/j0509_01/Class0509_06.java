@@ -26,16 +26,16 @@ public class Class0509_06 {
     System.out.println("숫자를 입력하세요.");
     input = scan.nextInt();
     
-    String answer2 = (input>10)"10보다 큽니다.":"10 보다 작습니다.":"(input==10)?"10 입니다..":"10보다 작습니다.";
+    String answer2 = (input>10)?"10보다 큽니다.":(input==10)?"10 입니다.":"10보다 작습니다.";
      // 에러날 확률이 많이 자주 사용하지 않음
 
 	System.out.println(answer2);
 	
 	 // 정수를 입력 받아 음수 양수로 양수면 음수로 변경하시오.
-	 System.out.println("음수는 양수로, 양수는 음ㄹ수로 변경하빈다. 숫자를 입력하세요.");
+	 System.out.println("음수는 양수로, 양수는 음수로 변경합니다. 숫자를 입력하세요.");
 	 input = scan.nextInt();
 	 int result2 =(input>0)?-input:-input; //음수만: -input:input 으로 사용 
-	 System.out.println("결과값 : "+result2; //
+	 System.out.println("결과값 : "+result2); //
 	 
 	
 	 

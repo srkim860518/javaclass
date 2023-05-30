@@ -23,6 +23,9 @@ public class Class0509_04 {
 		System.out.println("PW를 입력하세요.");
 //		PW = scan.next());
 		
+		
+		
+		
 		PW = scan.nextLine(); //nextInt() enter키를 입력으로 사용
 		
 		System.out.println("이름을 입력하세요.");

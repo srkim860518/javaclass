@@ -23,8 +23,8 @@ public class Class0510_06 {
 	 
 			 
 	 // 3. 비교(switch) 
+	 int result = 0; 
 	 switch(op) { // 확인하기!!!!
-		int result = 0; 
 	 case '+':
 		 result = num1 + num2;
 		 System.out.println("결과값 : "+(num1 + num2));

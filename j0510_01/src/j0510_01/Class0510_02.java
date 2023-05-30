@@ -16,26 +16,7 @@ public class Class0510_02 {
 //	 }else {
 //		 System.out.println("8이 아닙니다.");
 //	 }
-//--------------------------------------------------	
-//	     	int num = 8;
-////		(num>=1)?"":"" 
-//			if(num==8) {
-//				System.out.printl("8입니다.");
-//			} else{
-//				System.out.println("8이 아닙니다.");
-//			}
-//		---------------------
-//			//	if,else문
-//				 int num = 0;
-//				
-//			     if(num>0) {
-//					 System.out.println("양수 입니다.");
-//				 }else if(num==0){
-//					 System.out.println("0입니다.");
-//				 }else {
-//					 System.out.println("음수 입니다.");
-//				 }
-  //---------------------------------------------------	
+
 //		//if 문만 
 //		int num =0;
 //		 if(num==0) {

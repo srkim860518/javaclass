@@ -20,7 +20,7 @@ public class Class0510_05 {
 			}	
 		}
 				
-		if(score>=80){ // 80~89까지 비교			
+		else if(score>=80){ // 80~89까지 비교			
 			System.out.print("B");
 			if(score>=87) {
 				System.out.println("+");
@@ -29,7 +29,7 @@ public class Class0510_05 {
 		    }	
 		}
 			
-	    if(score>=70){ // 80~89까지 비교			
+		else if(score>=70){ // 80~89까지 비교			
 			System.out.println("C");
 			if(score>=77) {
 				System.out.println("+");
@@ -38,7 +38,7 @@ public class Class0510_05 {
 			}
 	    }
 			
-		if(score>=60){ // 80~89까지 비교			
+		else if(score>=60){ // 80~89까지 비교			
 			System.out.println("D");
 			if(score>=67) {
 				System.out.println("+");
