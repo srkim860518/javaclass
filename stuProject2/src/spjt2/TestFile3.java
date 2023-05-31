@@ -15,7 +15,7 @@ public class TestFile3 {
 			System.out.println(data); //1001,홍길동, 83,100,90
 			String[] dataArr = data.split(",");
 			
-			int stuNo = Integer.parseInt(dataArr[0]);
+			int stuNo = Integer.parseInt(dataArr[0]);// 형변환
 			String name = dataArr[1];
 //			String kor = dataArr[2];
 //			String eng = dataArr[3];

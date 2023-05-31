@@ -12,7 +12,7 @@ public class Class0510_08 {
 //}
 //----------------------------------------
 //		int sum=0;
-		
+//		
 //    for (int i=1;i<=100;i++) {
 //    	sum= sum +i;
 //	System.out.println(i+":"+sum);
@@ -24,6 +24,7 @@ public class Class0510_08 {
 //    for (i=1;i<=100;i++) { // 부등호 뒤 숫자는 반복하는 횟수 =100번 반복, print에서 i를(1을) 더하니 101번째가 표기됨
 //    	sum= sum +i;
 //	System.out.println(i+":"+sum);   
+//    }
 //--------------------------------------------------------------------
 
 	int sum=0;
@@ -31,7 +32,8 @@ public class Class0510_08 {
     for (i=1;i<=3;i++) { // 부등호 뒤 숫자는 반복하는 횟수 =3번 반복
     	sum= sum +i;
 	System.out.println((i-1)+":"+sum);
-//---------------------------------------------------------------------
+    }
+////---------------------------------------------------------------------
 		
 //		숫자를 3번 반복해서 입력 받아, 합을 출력하시오
 //		1. 변수 선언 num, sum
@@ -44,17 +46,17 @@ public class Class0510_08 {
        
        Scanner scan = new Scanner(System.in);
      
-       int sum=0;
-   	   int i =1;
-   	   
-       for (int i=1;i<=3;i++) { // 부등호 뒤 숫자는 반복하는 횟수 =3번 반복
-    	   System.out.println("숫자를 입력하세요.");
-    	   int num = scan.nextInt();
-    	   sum= sum + num;
-    	   //System.out.println((i-1)+sum);
-    	   System.out.println((i-1)+":"+sum);
-		
-       }
+//       int sum=0;
+//   	   int i =1;
+//   	   
+//       for (int i=1;i<=3;i++) { // 부등호 뒤 숫자는 반복하는 횟수 =3번 반복
+//    	   System.out.println("숫자를 입력하세요.");
+//    	   int num = scan.nextInt();
+//    	   sum= sum + num;
+//    	   //System.out.println((i-1)+sum);
+//    	   System.out.println((i-1)+":"+sum);
+//		
+//       }
 //--------------------------------------------------
      //교수님 풀이 - 이문장 외워야함.
 //       Scanner scan = new Scanner(System.in);
@@ -66,8 +68,8 @@ public class Class0510_08 {
 //    	   sum = sum+num;  			
 //   		System.out.println("합계:"+sum);
 //       }
-
-		
+//
+//		
 
 	}//main
 

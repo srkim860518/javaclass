@@ -45,17 +45,14 @@ public class TestFile {
 		//파일 저장은 try - catch
 		FileWriter fw = null; 
 		fw =new FileWriter("c:/Data/Student.txt");
-		String Data = "1,홍길동,100,100,99";
-		 Data += "2,유관순,99,99,98";
-		 Data += "3,이순신,98,98,91";
+		String Data = "1,홍길동,100,100,99 \n";
+		 Data += "2,유관순,99,99,98 \n";
+		 Data += "3,이순신,98,98,91 \n";
 		fw.write(Data);
 		fw.flush();// 메모리에 잇는 형태를 버퍼에 저장 속도가 빨라짐
 		fw.close(); // 파일이 만듦어짐
 		
 		System.out.println("파일이 저장되었습니다.");
-		
-	
 	}
-	
 
 }//class
